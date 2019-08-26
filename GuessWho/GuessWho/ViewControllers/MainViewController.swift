@@ -11,15 +11,23 @@ import Foundation
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var mainView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Setup background falling twitter birds
         let twitterBird = TwiterBirdView()
         twitterBird.twitterImage = UIImage(named: "twitterBird")
         twitterBird.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(twitterBird)
+        view.sendSubviewToBack(twitterBird)
         NSLayoutConstraint.activate([twitterBird.leadingAnchor.constraint(equalTo: view.leadingAnchor),twitterBird.trailingAnchor.constraint(equalTo: view.trailingAnchor),twitterBird.topAnchor.constraint(equalTo: view.topAnchor), twitterBird.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
+        //setup focal view appearance
+        mainView.layer.cornerRadius = 15
+        mainView.layer.borderWidth = 5
+        mainView.layer.borderColor = AppearanceHelper.bergonia.cgColor
     }
 
+    
     /*
     // MARK: - Navigation
 
