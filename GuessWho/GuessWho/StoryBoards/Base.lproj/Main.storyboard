@@ -34,6 +34,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-yg-HJn">
                                         <rect key="frame" x="12" y="306" width="287" height="62"/>
                                         <state key="normal" image="singleButton"/>
+                                        <connections>
+                                            <segue destination="LJ1-mo-qKR" kind="show" id="Hdy-a5-thL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.96470588235294119" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,7 +59,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6n9-kQ-PUD" firstAttribute="bottom" secondItem="idW-6q-FRl" secondAttribute="bottom" constant="172" id="CZo-Hl-rWu"/>
                             <constraint firstItem="idW-6q-FRl" firstAttribute="top" secondItem="6n9-kQ-PUD" secondAttribute="top" constant="106" id="Zfe-59-R0S"/>
@@ -66,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6n9-kQ-PUD"/>
                     </view>
                     <connections>
+                        <outlet property="exampleButton" destination="mqD-yg-HJn" id="fyN-gR-HRU"/>
                         <outlet property="mainView" destination="idW-6q-FRl" id="YeL-gS-x2D"/>
                     </connections>
                 </viewController>
@@ -76,10 +80,10 @@
         <!--Onboard-->
         <scene sceneID="R5a-th-Gsd">
             <objects>
-                <viewControllerPlaceholder storyboardName="Onboard" id="LJ1-mo-qKR" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="onboard" storyboardName="Onboard" id="LJ1-mo-qKR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbm-at-MR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="63"/>
+            <point key="canvasLocation" x="556" y="56"/>
         </scene>
         <!--SinglePlayer-->
         <scene sceneID="8jD-HB-IyZ">

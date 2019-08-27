@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H7D-dc-PaF">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,20 +10,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboard View Controller-->
         <scene sceneID="eb9-9L-bWV">
             <objects>
-                <viewController id="H7D-dc-PaF" sceneMemberID="viewController">
+                <viewController id="H7D-dc-PaF" customClass="OnboardViewController" customModule="GuessWho" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jyQ-zN-b6F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMp-eu-xJM">
+                                <rect key="frame" x="51" y="86" width="316" height="696"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnr-8P-B6b" customClass="InstructionsView" customModule="GuessWho" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="450" width="277" height="214"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.96470588239999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xnr-8P-B6b" secondAttribute="bottom" constant="32" id="ULU-oC-iB3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xnr-8P-B6b" secondAttribute="trailing" constant="21" id="Uf8-0G-VcW"/>
+                                    <constraint firstItem="Xnr-8P-B6b" firstAttribute="top" secondItem="KMp-eu-xJM" secondAttribute="top" constant="450" id="aTo-X1-0wv"/>
+                                    <constraint firstItem="Xnr-8P-B6b" firstAttribute="leading" secondItem="KMp-eu-xJM" secondAttribute="leading" constant="18" id="msh-ET-ZQM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CG0-3Q-Kur" firstAttribute="trailing" secondItem="KMp-eu-xJM" secondAttribute="trailing" constant="47" id="5Nh-aq-dGs"/>
+                            <constraint firstItem="KMp-eu-xJM" firstAttribute="top" secondItem="CG0-3Q-Kur" secondAttribute="top" constant="42" id="aCn-zf-cS2"/>
+                            <constraint firstItem="KMp-eu-xJM" firstAttribute="leading" secondItem="CG0-3Q-Kur" secondAttribute="leading" constant="51" id="hmr-nm-VvR"/>
+                            <constraint firstItem="CG0-3Q-Kur" firstAttribute="bottom" secondItem="KMp-eu-xJM" secondAttribute="bottom" constant="80" id="rth-K5-F8r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CG0-3Q-Kur"/>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="KMp-eu-xJM" id="18m-t9-Ko9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV9-vJ-IEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="123"/>
+            <point key="canvasLocation" x="672.46376811594212" y="122.54464285714285"/>
         </scene>
     </scenes>
 </document>
