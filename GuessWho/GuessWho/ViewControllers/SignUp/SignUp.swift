@@ -1,5 +1,5 @@
 //
-//  SignUpLoginMenu.swift
+//  SignUp.swift
 //  GuessWho
 //
 //  Created by Andrew Ruiz on 8/26/19.
@@ -8,20 +8,18 @@
 
 import UIKit
 
-class MainMenu: UIViewController {
+class SignUp: UIViewController {
     
     @IBOutlet weak var gameIcon: UIImageView!
-    @IBOutlet weak var gameTitle: UILabel!
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
     @IBAction func signUpButtonTapped(_ sender: Any) {
     }
     
-    
-    @IBAction func loginButtonTapped(_ sender: Any) {
-    }
 }
