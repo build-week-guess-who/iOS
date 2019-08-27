@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059E6B6D2314850C000B4FC5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E6B6C2314850C000B4FC5 /* CustomButton.swift */; };
+		059E6B702314972B000B4FC5 /* futura medium bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFDF8CBA23142EE800AEBCF8 /* futura medium bt.ttf */; };
+		05D8BA902314780B0072CAF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D8BA8F2314780B0072CAF2 /* ViewController.swift */; };
 		EF072E432314094A0048652A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF072E422314094A0048652A /* AppDelegate.swift */; };
 		EF072E482314094A0048652A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF072E462314094A0048652A /* Main.storyboard */; };
 		EF072E4A2314095B0048652A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF072E492314095B0048652A /* Assets.xcassets */; };
@@ -22,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059E6B6C2314850C000B4FC5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		05D8BA8F2314780B0072CAF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF072E3F2314094A0048652A /* GuessWho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF072E422314094A0048652A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF072E472314094A0048652A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +104,8 @@
 			children = (
 				EF072E6923140DE20048652A /* MainViewController.swift */,
 				EFDF8CB8231426F100AEBCF8 /* AppearanceHelper.swift */,
+				05D8BA8F2314780B0072CAF2 /* ViewController.swift */,
+				059E6B6C2314850C000B4FC5 /* CustomButton.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				EF072E5823140AC20048652A /* Onboard.storyboard in Resources */,
 				EF072E482314094A0048652A /* Main.storyboard in Resources */,
 				EF072E5E23140B700048652A /* SinglePlayer.storyboard in Resources */,
+				059E6B702314972B000B4FC5 /* futura medium bt.ttf in Resources */,
 				EF072E6423140CCF0048652A /* Signup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +205,8 @@
 				EF072E6D23140E270048652A /* User.xcdatamodeld in Sources */,
 				EF072E432314094A0048652A /* AppDelegate.swift in Sources */,
 				EF072E7023140E940048652A /* UserController.swift in Sources */,
+				05D8BA902314780B0072CAF2 /* ViewController.swift in Sources */,
+				059E6B6D2314850C000B4FC5 /* CustomButton.swift in Sources */,
 				EFDF8CB9231426F100AEBCF8 /* AppearanceHelper.swift in Sources */,
 				EF072E6A23140DE20048652A /* MainViewController.swift in Sources */,
 			);
