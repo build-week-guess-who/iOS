@@ -91,6 +91,7 @@
 				EF072E422314094A0048652A /* AppDelegate.swift */,
 				EF072E7123140E9B0048652A /* ModelController */,
 				EF072E6E23140E350048652A /* Models */,
+				86FFB35A2314808900F35F12 /* SignUp */,
 				EF072E6823140DBE0048652A /* ViewControllers */,
 				EF072E6523140D680048652A /* StoryBoards */,
 				EF072E492314095B0048652A /* Assets.xcassets */,
@@ -118,7 +119,6 @@
 			children = (
 				EF072E6923140DE20048652A /* MainViewController.swift */,
 				EFDF8CB8231426F100AEBCF8 /* AppearanceHelper.swift */,
-				86FFB35A2314808900F35F12 /* SignUp */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
